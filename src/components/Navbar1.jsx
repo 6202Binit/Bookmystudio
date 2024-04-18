@@ -1,10 +1,10 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Navbar1 = () => {
   return (
     <div className="flex flex-col sm:flex-row border-gray-300 border-b-2">
       {/* title */}
-      <div className="flex flex-row items-center">
+      <Link to="/" className="flex flex-row items-center">
         <div className="mt-1">
           <svg
             width="20"
@@ -30,11 +30,11 @@ const Navbar1 = () => {
           </svg>
         </div>
         <p className="font-medium mx-2 text-xl ">Studio On Rent</p>
-      </div>
+      </Link>
       {/* //search bar */}
       <div className="relative mt-4 sm:mt-0 ml-0 sm:ml-28">
         <input
-          className=" bg-slate-100 pl-10 py-1 w-full sm:w-[40vw]"
+          className=" bg-slate-100 pl-10 py-1 mt-2 w-full sm:w-[40vw]"
           type="search"
           name="search"
           id=""
@@ -69,55 +69,57 @@ const Navbar1 = () => {
 
       {/* other things */}
       <div className="ml-0 mt-4 sm:mt-0 sm:ml-3 flex items-center">
-        <svg
-          width="30"
-          height="30"
-          viewBox="0 0 50 50"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect width="50" height="50" rx="6" fill="#246BFD" />
-          <g clipPath="url(#clip0_355_50)">
-            <path
-              d="M21.8928 30.75C21.8928 29.0241 20.4937 27.625 18.7678 27.625C17.0419 27.625 15.6428 29.0241 15.6428 30.75C15.6428 32.4759 17.0419 33.875 18.7678 33.875C20.4937 33.875 21.8928 32.4759 21.8928 30.75Z"
-              stroke="#EDEDED"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M23.9761 30.75H36.4761"
-              stroke="#EDEDED"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M30.2261 18.25C30.2261 19.9759 31.6252 21.375 33.3511 21.375C35.077 21.375 36.4761 19.9759 36.4761 18.25C36.4761 16.5241 35.077 15.125 33.3511 15.125C31.6252 15.125 30.2261 16.5241 30.2261 18.25Z"
-              stroke="#EDEDED"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M15.6428 18.25H28.1428"
-              stroke="#EDEDED"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </g>
-          <defs>
-            <clipPath id="clip0_355_50">
-              <rect
-                width="25"
-                height="25"
-                fill="white"
-                transform="matrix(0 -1 1 0 12 37)"
+        <Link to="/booktour">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 50 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="50" height="50" rx="6" fill="#246BFD" />
+            <g clipPath="url(#clip0_355_50)">
+              <path
+                d="M21.8928 30.75C21.8928 29.0241 20.4937 27.625 18.7678 27.625C17.0419 27.625 15.6428 29.0241 15.6428 30.75C15.6428 32.4759 17.0419 33.875 18.7678 33.875C20.4937 33.875 21.8928 32.4759 21.8928 30.75Z"
+                stroke="#EDEDED"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
-            </clipPath>
-          </defs>
-        </svg>
+              <path
+                d="M23.9761 30.75H36.4761"
+                stroke="#EDEDED"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M30.2261 18.25C30.2261 19.9759 31.6252 21.375 33.3511 21.375C35.077 21.375 36.4761 19.9759 36.4761 18.25C36.4761 16.5241 35.077 15.125 33.3511 15.125C31.6252 15.125 30.2261 16.5241 30.2261 18.25Z"
+                stroke="#EDEDED"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M15.6428 18.25H28.1428"
+                stroke="#EDEDED"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_355_50">
+                <rect
+                  width="25"
+                  height="25"
+                  fill="white"
+                  transform="matrix(0 -1 1 0 12 37)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </Link>
       </div>
 
       {/* notification and profile */}

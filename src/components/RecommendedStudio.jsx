@@ -2,7 +2,7 @@ import React from "react";
 
 const RecommendedStudio = () => {
   return (
-    <div className=" mt-6">
+    <div className=" mt-8">
       <div className="flex mx-4 items-center justify-between">
         <h1 className=" sm:text-2xl md:text-3xl">Recommended Studios</h1>
         <div className="text-right">

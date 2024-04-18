@@ -1,13 +1,14 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-// import Navbar1 from "./components/Navbar1";
-// import Navbar2 from "./components/Navbar2";
-// import Footers from "./components/Footers";
 import Home from "./pages/Home";
 import NavBarPage from "./pages/NavBarPage";
-// import Explore from "./pages/Explore";
 import NoPage from "./pages/NoPage";
 import Chat from "./pages/Chat";
+import Profile from "./pages/Profile";
+import Favourite from "./pages/Favourite";
+import BookTour from "./pages/BookTour"
+import CustomSchedule from "./pages/CustomSchedule";
+import ScheduleTour from "./pages/ScheduleTour";
 
 function App() {
   return (
@@ -16,6 +17,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/chat" element={<Chat />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/favourite" element={<Favourite />} />
+        <Route path="/booktour" element={<BookTour />} />
+        <Route path="/customSchedule" element={<CustomSchedule />} />
+        <Route path="/scheduleTour" element={<ScheduleTour />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </>
