@@ -2,9 +2,11 @@ import React from "react";
 import RecommendedStudio from "../components/RecommendedStudio";
 import NearbyStudio from "../components/NearbyStudio";
 import Footers from "../components/Footers";
+import NavBarPage from "./NavBarPage";
 const Home = () => {
   return (
     <div>
+      <NavBarPage/>
       <div className="mt-8 mx-10 flex flex-wrap justify-center md:justify-between">
         <div className="flex flex-col items-center mb-8 md:mb-0">
           <img

@@ -1,10 +1,17 @@
-import { Link } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import AboutBooktour from "../components/aboutBooktour";
+import NavBarPage from "./NavBarPage";
 
 
 const BookTour = () => {
+
+  const navigate = useNavigate();
+  const openBookTour = () => {
+    navigate("/scheduleTour");
+  };
   return (
     <div>
+      <NavBarPage />
       <div className="mt-12 flex flex-col sm:flex-row">
         <div className="w-full sm:w-3/4 flex justify-center sm:ml-16 ml-auto">
           <div className="flex flex-col sm:flex-row">
@@ -88,9 +95,12 @@ const BookTour = () => {
               </div>
             </div>
             <div className="ml-auto  mt-3">
-              <Link to="/scheduleTour" className="text-white bg-blue-500 rounded-2xl py-1 px-4 text-xs font-semibold">
+              <button
+                onClick={openBookTour}
+                className="text-white bg-blue-500 rounded-2xl py-1 px-4 text-xs font-semibold"
+              >
                 Book tour
-              </Link>
+              </button>
             </div>
           </div>
         </div>
@@ -104,7 +114,6 @@ const BookTour = () => {
         </div>
       </div>
       <AboutBooktour />
-     
     </div>
   );
 };

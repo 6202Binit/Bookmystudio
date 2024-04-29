@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import NavBarPage from "./NavBarPage";
 
 const Favourite = () => {
   const [activeButton, setActiveButton] = useState("All");
@@ -7,7 +8,9 @@ const Favourite = () => {
     setActiveButton(buttonName);
   };
   return (
+
     <div>
+      <NavBarPage/>
       {/* collection filter */}
       <div className="mt-10 flex flex-wrap justify-center">
         <button

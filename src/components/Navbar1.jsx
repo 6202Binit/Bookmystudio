@@ -1,6 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Navbar1 = () => {
+  const navigate = useNavigate();
+  const openDashboard = () => {
+    navigate("/dashboard");
+  };
+  const openBookTour = () => {
+    navigate("/booktour");
+  };
+
   return (
     <div className="flex flex-col sm:flex-row border-gray-300 border-b-2">
       {/* title */}
@@ -69,7 +77,7 @@ const Navbar1 = () => {
 
       {/* other things */}
       <div className="ml-0 mt-4 sm:mt-0 sm:ml-3 flex items-center">
-        <Link to="/booktour">
+        <button onClick={openBookTour}>
           <svg
             width="30"
             height="30"
@@ -119,7 +127,7 @@ const Navbar1 = () => {
               </clipPath>
             </defs>
           </svg>
-        </Link>
+        </button>
       </div>
 
       {/* notification and profile */}
@@ -145,7 +153,9 @@ const Navbar1 = () => {
         </div>
         <div className="flex">
           <div className="flex items-center ml-4 sm:ml-8">
-            <img className="w-8 h-8" src="./images/taraimg.svg" alt="" />
+            <button onClick={openDashboard}>
+              <img className="w-8 h-8" src="./images/taraimg.svg" alt="" />
+            </button>
           </div>
           <p className=" ml-6 text-xl">Tara Chaudhary</p>
         </div>
