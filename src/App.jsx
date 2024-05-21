@@ -5,12 +5,13 @@ import NoPage from "./pages/NoPage";
 import Chat from "./pages/Chat";
 import Profile from "./pages/Profile";
 import Favourite from "./pages/Favourite";
-import BookTour from "./pages/BookTour"
+import BookTour from "./pages/BookTour";
 import CustomSchedule from "./pages/CustomSchedule";
 import ScheduleTour from "./pages/ScheduleTour";
-import RequestTour from "./pages/RequestTour";
+import RequestTour from "./pages/RequestTour";cd 
 import Dashboard from "./pages/Dashboard";
 import Studio from "./pages/Studio";
+import Users from "./pages/Users";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
         </Route>
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/dashboard/studio" element={<Studio />} />
-
+        <Route path="/dashboard/users" element={<Users />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </>
