@@ -8,7 +8,7 @@ import Favourite from "./pages/Favourite";
 import BookTour from "./pages/BookTour";
 import CustomSchedule from "./pages/CustomSchedule";
 import ScheduleTour from "./pages/ScheduleTour";
-import RequestTour from "./pages/RequestTour";cd 
+import RequestTour from "./pages/RequestTour";
 import Dashboard from "./pages/Dashboard";
 import Studio from "./pages/Studio";
 import Users from "./pages/Users";
