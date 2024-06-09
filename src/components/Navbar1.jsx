@@ -2,9 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 const Navbar1 = () => {
   const navigate = useNavigate();
-  const openDashboard = () => {
-    navigate("/dashboard");
-  };
+  
   const openBookTour = () => {
     navigate("/booktour");
   };
@@ -153,7 +151,7 @@ const Navbar1 = () => {
         </div>
         <div className="flex">
           <div className="flex items-center ml-4 sm:ml-8">
-            <button onClick={openDashboard}>
+            <button>
               <img className="w-8 h-8" src="./images/taraimg.svg" alt="" />
             </button>
           </div>

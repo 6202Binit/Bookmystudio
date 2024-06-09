@@ -12,13 +12,16 @@ import RequestTour from "./pages/RequestTour";
 import Dashboard from "./pages/Dashboard";
 import Studio from "./pages/Studio";
 import Users from "./pages/Users";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Login/>} />
         <Route path="/chat" element={<Chat />} />
+        <Route path="/Home" element={<Home/>} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/favourite" element={<Favourite />} />
         <Route path="/booktour" element={<BookTour />} />
@@ -29,6 +32,8 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/dashboard/studio" element={<Studio />} />
         <Route path="/dashboard/users" element={<Users />} />
+        <Route path="/signup" element={<Signup/>} />
+        <Route path="/login" element={<Login/>} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </>
