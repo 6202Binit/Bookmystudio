@@ -14,12 +14,13 @@ import Studio from "./pages/Studio";
 import Users from "./pages/Users";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Landing from "./pages/Landing";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Login/>} />
+        <Route path="/" element={<Landing/>} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/Home" element={<Home/>} />
         <Route path="/profile" element={<Profile />} />
