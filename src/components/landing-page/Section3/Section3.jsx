@@ -73,7 +73,7 @@ const Section3 = () => {
             ) : (
               <div className="relative top-[70px] flex flex-col gap-[35px] sm:w-[550px] w-[350px] font-['IBM Plex Sans'] text-[16px] leading-[20.8px] text-[rgba(101,101,101,1)]">
                 <div className="sm:w-[517px] w-[342px] sm:h-[105px] h-[147px] font-[500]">
-                  Our vision is to become the leading platform for connecting creative individuals with inspiring studio spaces. We envision a world where every artist has the opportunity to realize their creative potential and share their unique talents with the world.
+                  Our vision is to become the leadinSg platform for connecting creative individuals with inspiring studio spaces. We envision a world where every artist has the opportunity to realize their creative potential and share their unique talents with the world.
                 </div>
                 <div className="sm:w-[519px] w-[338px] sm:h-[42px] h-[63px] sm:font-[700] font-[600]">
                   <span className="text-[rgba(8,28,7,1)]">1. Empowerment:</span> We empower artists by providing access to resources and opportunities that enable them to pursue their passions.

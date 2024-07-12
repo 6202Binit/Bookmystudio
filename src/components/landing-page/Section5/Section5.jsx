@@ -28,14 +28,14 @@ const Section5 = () => {
   return (
     <div
       id="testimonials"
-      className=" w-full flex flex-col 2xl:gap-[60px] lg:gap-[50px] gap-[40px] items-center sm:mb-[100px] mb-[80px] lg:ml-[20px]"
+      className=" w-full flex flex-col 2xl:gap-[60px] lg:gap-[50px] gap-[40px] items-center sm:mb-[100px] mb-[80px] lg:ml-[0px] 2xl:px-[128px] px-[9px]"
     >
       <div>
         <Heading headingStyle={{ width: "360px" }} center={true}>
           Testimonials
         </Heading>
       </div>
-      <div className="overflow-hidden 2xl:w-[1420px] xl:w-[1100px] lg:w-[760px] w-[350px]">
+      <div className="overflow-hidden w-full ">
         <div
           className="flex gap-2 transition-transform duration-500 ease-in-out"
           style={{
