@@ -17,7 +17,7 @@ const Section1 = () => {
 
   return (
     <section>
-      <div className="w-screen h-[1400px] lg:px-[128px] px-[16px] md:py-[80px] py-[50px] sm:mb-[0px] mb-[150px] flex gap-[40px]">
+      <div className="w-screen h-[1400px] lg:px-[128px] px-[16px] md:py-[80px] py-[50px] sm:mb-[0px] mb-[150px] flex justify-between gap-[40px]">
         {/* left */}
         <div>
           {/* top */}
@@ -56,12 +56,12 @@ const Section1 = () => {
           </div>
         </div>
         {/* right */}
-        <div className="relative">
+        <div className="relative flex ">
           <div className="2xl:block hidden relative z-10">
-            <div className="w-[550px] h-[865px] flex justify-center">
+            <div className="w-[550px] h-[865px] flex justify-end">
               <img src={MobileScreen} alt="Mobile screen" />
             </div>
-            <div className="absolute top-[250px] left-[20px]">
+            <div className="absolute top-[250px] -right-[45px]">
               <img src={MobileRing} alt="Ring on mobile screen" />
             </div>
           </div>

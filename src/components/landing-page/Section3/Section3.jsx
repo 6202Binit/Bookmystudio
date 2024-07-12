@@ -9,7 +9,7 @@ const Section3 = () => {
     <div id="aboutUs" className="w-screen lg:px-[128px] sm:mt-[0px]">
       <div className="flex flex-col gap-[40px] sm:ml-[15px] lg:ml-[0px]">
         <Heading headingStyle={{ width: "360px" }}>About Us</Heading>
-        <div className="relative bg-[white] flex gap-[25px] 2xl:w-[1200px] xl:w-[1040px] lg:w-[800px] sm:w-[610px] w-[375px] sm:h-[633px] h-[800px] border sm:rounded-[27px] shadow-[0px_0px_32px_0px_rgba(0,0,0,0.09)] sm:pl-[40px] pl-[20px] pt-[40px]">
+        <div className="relative bg-[white] flex justify-between gap-[25px] w-full sm:h-[633px] h-[800px] border sm:rounded-[27px] shadow-[0px_0px_32px_0px_rgba(0,0,0,0.09)] sm:pl-[40px] pl-[20px] pt-[40px]">
           {/* left */}
           <div>
             <div className="flex relative sm:left-[0px] left-[15px]">

@@ -37,7 +37,7 @@ const LastSection = () => {
             {usefullLinkData.map((data, index) => (
               <div
                 key={index}
-                className={`${data.width} h-[18px] font-['IBM Plex Sans'] text-[14px] font-[500] leading-[18.2px] text-left text-[rgba(255,255,255,1)] cursor-pointer`}
+                className={`${data.width} py-3 h-[18px] font-['IBM Plex Sans'] text-[14px] font-[500] leading-[18.2px] text-left text-[rgba(255,255,255,1)] cursor-pointer`}
               >
                 {data.text}
               </div>
@@ -50,7 +50,7 @@ const LastSection = () => {
             {policiesData.map((data, index) => (
               <div
                 key={index}
-                className={`${data.width} h-[18px] font-['IBM Plex Sans'] text-[14px] font-[500] leading-[18.2px] text-left text-[rgba(255,255,255,1)] cursor-pointer`}
+                className={`${data.width} py-3 h-[18px] font-['IBM Plex Sans'] text-[14px] font-[500] leading-[18.2px] text-left text-[rgba(255,255,255,1)] cursor-pointer`}
               >
                 {data.text}
               </div>
@@ -63,7 +63,7 @@ const LastSection = () => {
             {helpData.map((data, index) => (
               <div
                 key={index}
-                className={`${data.width} h-[18px] font-['IBM Plex Sans'] text-[14px] font-[500] leading-[18.2px] text-left text-[rgba(255,255,255,1)] cursor-pointer`}
+                className={`${data.width} py-3 h-[18px] font-['IBM Plex Sans'] text-[14px] font-[500] leading-[18.2px] text-left text-[rgba(255,255,255,1)] cursor-pointer`}
               >
                 {data.text}
               </div>

@@ -1,6 +1,6 @@
 const Card = ({ logo, title, description }) => {
   return (
-    <div className="2xl:w-[385px] xl:w-[325px] lg:w-[250px] w-[356px] 2xl:h-[311px] lg:h-[300px] h-[155px] flex 2xl:flex-col lg:flex-col flex-row items-center 2xl:justify-normal justify-center gap-[10px] 2xl:px-[43px] px-[21px] 2xl:py-[34px] py-[0px] border rounded-[18px] shadow-[0px_0px_32px_0px_rgba(0,0,0,0.09)]">
+    <div className="w-full 2xl:h-[311px] lg:h-[300px] h-[155px] flex 2xl:flex-col lg:flex-col flex-row items-center 2xl:justify-normal justify-center gap-[10px] 2xl:px-[43px] px-[21px] 2xl:py-[34px] py-[0px] border rounded-[18px] shadow-[0px_0px_32px_0px_rgba(0,0,0,0.09)]">
       <div className="w-[100px] h-[100px]">
         <img src={logo} alt="" />
       </div>

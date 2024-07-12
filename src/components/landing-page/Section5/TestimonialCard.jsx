@@ -1,6 +1,6 @@
 const TestimonialCard = ({ avatar, name, review, date }) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-[30px] 2xl:w-[373px] w-[347px] h-[522px] border rounded-[17px] shadow-[1px_2px_2px_0px_rgba(0,0,0,0.09)] bg-[rgba(255,255,255,1)]">
+    <div className="flex flex-col items-center justify-center gap-[30px] 2xl:w-[410px] w-[347px] h-[522px] border rounded-[17px] shadow-[1px_2px_2px_0px_rgba(0,0,0,0.09)] bg-[rgba(255,255,255,1)]">
       <div className="flex flex-col gap-[15px]">
         <div className="w-[100px] h-[100px]">
           <img src={avatar} alt="" />

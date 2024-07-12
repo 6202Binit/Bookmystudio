@@ -4,7 +4,7 @@ import { HashLink } from "react-router-hash-link";
 const CustomNavLink = ({ to, children, onClose, ...props }) => {
   return (
     <li
-      className="h-[18px] font-[500] text-[14px] leading-[18px] font-['IBM Plex Sans'] text-[#48505B] hover:border-b-2 border-b-[#48505B]"
+      className="h-[18px] font-[500] text-[14px] text-nowrap leading-[18px] font-['IBM Plex Sans'] text-[#48505B] hover:border-b-2 border-b-[#48505B]"
       style={{ ...props, listStyle: "none" }}
       onClick={onClose}
     >
